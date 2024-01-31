@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To CAD</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="images/logo 1.png" alt="" class="logo">
+        <ul id="menu-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Register</li>
+            <li>Contact us</li>
+        </ul>
+        <button class="nav-btn">Get Started <img src="images/arrow-white.png" alt=""></button>
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="toogleMenu()">
+    </nav>
+    <div class="header">
+        <div class="header-content">
+            <h1><span>WELCOME</span><br><span>CAD</span></h1>
+        <div class="btn-container">
+            <button class="btn-dark">Contact Us<img src="images/phone.png" alt=""></button>
+            <button class="btn-light">Know more <img src="images/arrow-black.png" alt=""></button>
+        </div>
+        <p>Know eveything about CAD<p>
+        </div>
+        <img src="images/user 1.png" alt="" class="user-img">
+    </div>
+    <script>
+        let navbar=document.querySelector('nav');
+        let menuLinks = document.getElementById("menu-links")
+
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+
+        window.onscroll =function(){
+            if(window.scrollY>0){
+                navbar.style.background ='#eefff9';
+            }else{
+                navbar.style.background ='transperent';
+            }
+        }
+    </script>
+</body>
+</html>
